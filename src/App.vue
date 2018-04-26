@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <button class="btn btn-primary">Hello Bootstrap</button>
   </div>
 </template>
 
