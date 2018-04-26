@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row">
 
-                <div class="col">
-                    <ContactList/>
+                <div class="col-sm-4 mt-4">
+                    <ContactList :contacts="contacts"/>
                 </div>
 
-                <div class="col">
+                <div class="col-sm-8 mt-4">
                     <ContactDetails/>
                 </div>
 
@@ -29,6 +29,24 @@
 
             ContactList,
             ContactDetails
+        },
+
+        data(){
+
+            return{
+
+
+                contacts:[
+
+            {   name: 'John '},
+            {   name: 'Sima '},
+            {   name: 'Pera '},
+            {   name: 'Djordje '},
+
+
+            ]}
+
+
         }
 
     }
