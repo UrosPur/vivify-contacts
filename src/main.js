@@ -13,13 +13,15 @@ const routes = [
     { path:'/' ,redirect: '/contacts'},
     { path:'/contacts' ,component: Contacts},
     { path:'/add-contact' ,component: AddContact},
+    { path: 'contact/:id', component: Contacts, name: 'contact-details'}
 
 
 ]
 
 
 const router = new VueRouter({
-    routes
+    routes,
+    mode:'history'
 });
 
 
