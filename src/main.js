@@ -12,8 +12,8 @@ const routes = [
 
     { path:'/' ,redirect: '/contacts'},
     { path:'/contacts' ,component: Contacts},
+    { path: '/contact/:id', component: Contacts, name: 'contact-details'},
     { path:'/add-contact' ,component: AddContact},
-    { path: 'contact/:id', component: Contacts, name: 'contact-details'}
 
 
 ]

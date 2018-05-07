@@ -38,37 +38,13 @@
 
                 contacts: [
 
-                    {
-                        id: 1,
-                        name: 'John Johnson',
-                        email: 'john@gmail.com',
-                        number: '4567-4684'
+                    {id: 1, name: 'John Johnson',email: 'john@gmail.com',number: '4567-4684'},
 
-                    },
+                    {id: 2,name: 'Sima Simic',email: 'sima@gmail.com',number: '4547-4684'},
 
-                    {
-                        id: 2,
-                        name: 'Sima Simic',
-                        email: 'sima@gmail.com',
-                        number: '4547-4684'
+                    {id: 3,name: 'Pera Peric',email: 'pera@gmail.com',number: '3367-4684'},
 
-                    },
-
-                    {
-                        id: 3,
-                        name: 'Pera Peric',
-                        email: 'pera@gmail.com',
-                        number: '3367-4684'
-
-                    },
-
-                    {
-                        id: 4,
-                        name: 'Dragan Dragic',
-                        email: 'dragan@gmail.com',
-                        number: '4567-4684'
-
-                    },
+                    { id: 4,name: 'Dragan Dragic',email: 'dragan@gmail.com',number: '4567-4684'},
 
                 ]
             }
