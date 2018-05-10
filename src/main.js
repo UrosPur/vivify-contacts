@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 const routes = [
 
     { path:'/' ,redirect: '/contacts'},
-    { path:'/contacts' ,component: Contacts},
+    { path:'/contacts' ,component: Contacts , name:'contacts-list'},
     { path: '/contact/:id', component: Contacts, name: 'contact-details'},
     { path:'/add-contact' ,component: AddContact},
 

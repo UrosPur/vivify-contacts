@@ -5,7 +5,7 @@
                      exact-active-class="active"
                      v-for="(contact,key) in contacts" :key="key"
         >
-            {{ contact.name }}
+            {{ contact.first_name }}
         </router-link>
     </ul>
 </template>
