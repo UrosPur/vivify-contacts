@@ -23,7 +23,7 @@ export default class CustomerService{
 
     get (id) {
 
-        // return axios.get(`contacts/${id}`)
+        return axios.get(`contacts/${id}`)
     }
 
     edit (contact) {
@@ -33,7 +33,7 @@ export default class CustomerService{
     remove (id) {
 
 
-        // return axios.delete(`contacts/${id}`)
+        return axios.delete(`contacts/${id}`)
     }
 
 

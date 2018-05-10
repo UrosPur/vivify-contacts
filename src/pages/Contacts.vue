@@ -8,7 +8,7 @@
                 </div>
 
                 <div class="col-sm-8 mt-4">
-                    <ContactDetails :contact="routeContact"/>
+                    <ContactDetails @onDelete="singleDelete" :contact="routeContact"/>
                 </div>
 
             </div>
@@ -71,6 +71,19 @@
                         this.contacts = response.data
 
                     });
+
+            },
+
+            singleDelete(id){
+
+
+                // this.contacts = this.contacts.filter(contact => contact.id != id)
+
+                let index = this.contacts.findIndex(contact => contact.id == id)
+
+
+                this.contacts.splice(index,1)
+                console.log(id)
 
             }
 

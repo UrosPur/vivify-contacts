@@ -12,6 +12,7 @@ const routes = [
 
     { path:'/' ,redirect: '/contacts'},
     { path:'/contacts' ,component: Contacts , name:'contacts-list'},
+    { path:'/edit/:id' ,component: AddContact , name:'edit'},
     { path: '/contact/:id', component: Contacts, name: 'contact-details'},
     { path:'/add-contact' ,component: AddContact},
 

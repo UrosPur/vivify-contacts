@@ -49,6 +49,19 @@
 
     export default {
         name: "AddContact",
+        created() {
+            if (this.$route.params.id) {
+
+                customerService.get(this.$route.params.id)
+                    .then((response) => {
+
+                        this.newContact= response.data
+
+                    })
+
+            }
+
+        },
         data() {
 
             return {
