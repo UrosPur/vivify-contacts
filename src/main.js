@@ -3,10 +3,13 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import AddContact from './pages/AddContact.vue'
 import Contacts from './pages/Contacts.vue'
+import MyDirectives from './plugins/MyDirectives.js'
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(MyDirectives)
+
 
 const routes = [
 
