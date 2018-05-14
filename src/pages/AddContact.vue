@@ -2,7 +2,9 @@
     <div>
         <div class="container">
             <div class="row">
-                <form @submit.prevent="addContact">
+                <!--<form @submit.prevent="addContact"-->
+                <form
+                      v-validate="validationRules">
                     <div class="form-group row">
                         <label for="text" class="col-4 col-form-label">First Name</label>
                         <div class="col-8">
@@ -15,7 +17,8 @@
                                         id="text" name="first_name"
                                         type="text"
                                         class="form-control here"
-                                        v-focus="focus" >
+                                        v-focus="focus"
+                                >
                             </div>
                         </div>
                     </div>
@@ -27,10 +30,15 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="text3" class="col-4 col-form-label">Email</label>
+                        <label for="email" class="col-4 col-form-label">Email</label>
                         <div class="col-8">
-                            <input v-model="newContact.email" id="text3" name="email" type="email"
-                                   class="form-control here">
+                            <input
+                                    v-model="newContact.email"
+                                    id="email"
+                                    name="email"
+                                    type="text"
+                                   class="form-control here"
+                            >
                         </div>
                     </div>
                     <div class="form-group row">
@@ -83,7 +91,13 @@
                     number: '',
                 },
 
-                focus:true
+                focus:true,
+
+                validationRules: {
+
+                    email: ['required','email']
+
+                }
             }
         },
         methods: {
