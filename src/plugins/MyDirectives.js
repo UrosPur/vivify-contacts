@@ -6,7 +6,6 @@ const rules = {
 
 }
 
-
 const MESSAGES_CLASSNAME = 'validator-messages'
 
 const removeOldMessages = (el) => {
@@ -14,7 +13,7 @@ const removeOldMessages = (el) => {
     let oldMessageElement = el.querySelector(`#${MESSAGES_CLASSNAME}`)
 
     if (oldMessageElement) {
-        console.log(250)
+
         oldMessageElement.remove()
     }
 
@@ -44,7 +43,6 @@ const MyDirectives = {
         //     }
         //
         // })
-
 
         // v-validate: requiered.email
         Vue.directive('validate', {
@@ -77,12 +75,14 @@ const MyDirectives = {
                             //remove element
                             removeOldMessages(el)
 
+                            console.log(250)
 
                             messageElement.innerHTML = `this field ${key.toUpperCase()} is required`
                             el.appendChild(messageElement)
                         } else {
 
                             removeOldMessages(el)
+                            console.log(350)
 
                         }
 
@@ -94,7 +94,6 @@ const MyDirectives = {
 
 
         })
-
 
     }
 
