@@ -4,7 +4,7 @@
             <div class="row">
                 <!--<form @submit.prevent="addContact"-->
                 <form
-                      v-validate="validationRules">
+                      v-validate="validationConfig">
                     <div class="form-group row">
                         <label for="text" class="col-4 col-form-label">First Name</label>
                         <div class="col-8">
@@ -93,11 +93,18 @@
 
                 focus:true,
 
+                validationConfig:{
+
                 validationRules: {
-
                     email: ['required','email']
+                },
 
+                submitCallBack: () => {
+                    this.addContact()
                 }
+
+                },
+
             }
         },
         methods: {
